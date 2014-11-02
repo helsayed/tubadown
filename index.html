@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" type="text/css" href="css/flat-bootstrap-rtl.min.css" />
+        <link href= "css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+        <link href="css/toggle-menu.min.css" rel="stylesheet" type="text/css" />
+        <link href="css/default.css" rel="stylesheet" type="text/css" />
+        
+        <script type="text/javascript" src="js/jquery-2.1.0.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        
+        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>        
+        <![endif]-->
+
+        <!-- Media queries -->
+        <!--[if lt IE 9]>
+            <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+        <![endif]-->
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Youtube converter</title>
+    </head>
+
+<body>
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul id="sidebar_menu" class="sidebar-nav">
+                <li class="sidebar-brand"><a id="menu-toggle" href="#">Menu<span id="main_icon" class="fa fa-navicon"></span></a>
+                </li>
+            </ul>
+            <ul class="sidebar-nav" id="sidebar">
+                 <li>
+					<a href="index.html" class="has-tip" data-toggle="tooltip" data-placement="left" title="Main">
+						<span class="sub_icon fa fa-home">
+						</span>
+					</a>
+                </li>
+                <li>
+					<a href="javascript:void(0)" class="has-tip" data-toggle="tooltip" data-placement="left" title="Downloaded Files">
+						<span class="sub_icon fa fa-user">
+						</span>
+					</a>
+                </li>
+                <li>
+					<a href="javascript:void(0)" class="has-tip" data-toggle="tooltip" data-placement="left" title="Available for download">
+						<span class="sub_icon fa fa-graduation-cap">
+						</span>
+					</a>
+                </li>
+                <li>
+					<a href="javascript:void(0)" class="has-tip" data-toggle="tooltip" data-placement="left" title="Hot Spots">
+						<span class="sub_icon fa fa-file-text"></span>
+					</a>
+                </li>
+
+            </ul>
+        </div>
+
+        <!-- Page content -->
+        <div id="page-content-wrapper">
+            <!-- Keep all page content within the page-content inset div! -->
+            <div class="page-content inset">
+              <!--- main header nav --->
+                <nav class="navbar navbar-default" role="navigation">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <a href="index.html" class="navbar-brand">
+                                <img src="images/logo.png" width="40" height="30" alt="Main application"/>
+                            </a>
+                        </div>
+                        <div class="col-md-6">
+                            <form class="navbar-form navbar-right" role="search">
+
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Search in downloads">
+                                </div>
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                                        Search<span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu right-caret" role="menu">
+                                        <li class="dropdown-header">Search in :</li>
+                                        <li class="nav-divider"></li>
+                                        <li><a href="#">Downloads</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </form>
+                        </div>   
+                    </div>
+                </nav>
+                <!--- main header nav end --->
+                
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        $(function () {
+            $('#page-content-wrapper').click(function () {
+                $("#wrapper").removeClass("active");
+            });
+
+
+            $("#menu-toggle").click(function (e) {
+                e.preventDefault();
+                $("#wrapper").toggleClass("active");
+            });
+
+        });
+        $('.has-tip').tooltip({ container: 'body' });
+    </script>
+
+</body>
+
+</html>
+<!--//font (meta tag) //side menu //responsive //html5 css3 for animation //colors: extension from chrome  -->
