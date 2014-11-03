@@ -1,3 +1,34 @@
+.sub_icon
+{
+  float: right;
+}
+#main_icon{
+  float: right;
+}
+
+.middle_div_search_button{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -93px;
+}
+.middle_div_search_input{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -50px;
+}
+   
+
+#sidebar-wrapper {
+    margin-right: +230px;
+    float: left;
+    }
+#wrapper {
+  padding-right: 0px;
+}
 body {
 	direction:rtl;
 	font-family: 'Droid Arabic Kufi', serif;
@@ -21,7 +52,7 @@ padding-bottom: 11px;
 .margin-btm20{margin-bottom: 20px !important;}
 .margin-top20{margin-top: 20px !important;}
 
-#sidebar_menu li a, .sidebar-nav li a{color: #968a3b;}
+#sidebar_menu li a, .sidebar-nav li a{color: #ffffff;}
 
 .navbar-default {
 background-color: #b31217;
@@ -63,7 +94,7 @@ border-color: #DADADA;
 
 .btn-primary{
 background: #222;
-    color: #968a3b;
+    color: #FFFFFF;
 }
 
 .btn-primary:hover{
